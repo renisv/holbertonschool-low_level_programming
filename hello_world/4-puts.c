@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/** main - Prints a specific string followed by a new line
+ *
+ * Description: Uses puts() to print "Programming is like building a
+ *              multilingual puzzle" followed by a new line.
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
