@@ -5,15 +5,19 @@
  *
  * Return: 0
  */
+
 int main(void)
 {
-	int i;
-
-	for (i = 0; i <=9; i++)
-	{
-		putchar(i+'0');
-	}
-	putchar('\n');
-
-	return (0);
+    char c;
+    
+    for (c = 'a'; c <= 'z'; c++)
+    {
+        if (c != 'e' && c != 'q')
+        {
+            putchar(c);
+        }
+    }
+    putchar('\n');
+    
+    return (0);
 }
