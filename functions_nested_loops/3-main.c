@@ -2,6 +2,10 @@
 #include <unistd.h>
 #include <stdio.h>
 
+/**
+*gives value to c
+*checks it
+*/
 int main(void)
 {
 	char c;
