@@ -2,10 +2,11 @@
 #include <unistd.h>
 
 /**
-*_islower checks a letter if its lowercase or not
-*returns 1 is lowercase
-*returns 0 if uppercase
+* _islower -  checks a letter if its lowercase or not
+* @c: parameter of input
+* Return: 1 or 0
 */
+
 int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
