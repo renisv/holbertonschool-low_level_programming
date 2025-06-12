@@ -3,9 +3,10 @@
 #include <stdio.h>
 
 /**
-*gives value to c
-*checks it
-*/
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 	char c;
