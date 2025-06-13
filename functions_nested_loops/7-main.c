@@ -16,5 +16,5 @@ int main(void)
 	_putchar('0' + r);
 	_putchar('\n');
     
-    return (0);
+    return (r);
 }
