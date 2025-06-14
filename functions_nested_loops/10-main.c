@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - check the code.
@@ -8,6 +9,8 @@
 
 int main(void)
 {
-    add(-89, 9);
+    int sum;
+	sum = add(-89, 9);
+	printf("%d\n", sum);
     return (0);
 }
