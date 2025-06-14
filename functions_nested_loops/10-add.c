@@ -10,8 +10,8 @@
 int add(int int1, int int2)
 {
 	int sum;
-	sum = int1 + int2;
 
+	sum = int1 + int2;
 	if (sum <= 9)
 	_putchar(sum);
 	else
