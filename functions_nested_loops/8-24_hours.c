@@ -2,14 +2,12 @@
 
 /**
 * jack_bauer - prints the time
-* @minute : paramenter to hold value
-* @hour : paramenter to hold value
 * Return: time
 */
 
 void jack_bauer(void)
 {
-    int hour, minute;
+int hour, minute;
 
 	for (hour = 0; hour <= 23; hour++)
 	{
