@@ -8,6 +8,6 @@
 
 int main(void)
 {
-    add(0, 0);
+    add(-89, 9);
     return (0);
 }
