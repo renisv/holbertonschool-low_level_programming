@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+* print_square - prints square
+* @c: parameter to hold value
+* Return: start
+*/
+
 int _putchar(char c);
 void print_square(int size)
 {
@@ -8,7 +14,8 @@ int j;
 
 if (size < 1)
 {	_putchar('\n'); }
-else {
+else
+{
 	for (j = 0; j < size; j++)
 	{
 		for (i = 0; i < size; i++)
