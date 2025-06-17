@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+* print_diagonal - prints diagonally
+* @c: parameter to hold value
+* Return: start
+*/
+
 int _putchar(char c);
 void print_diagonal(int n)
 {
@@ -12,7 +18,6 @@ void print_diagonal(int n)
 		{
 		_putchar(' ');
 		}
-	
 	_putchar('\\');
 	_putchar('\n');
 	}
