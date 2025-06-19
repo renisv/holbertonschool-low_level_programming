@@ -1,17 +1,18 @@
 #include "main.h"
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
+
 	for (i = 0; dest[i] != '\0'; i++)
 	{
 
 	}
-	for (j = 0; src[j] != '\0'; j++)
+	for (j = 0; src[j] == src[n]; j++)
 	{
 		dest[i + j] = src[j];
 	}
-	dest[i +j] = '\0';
+	dest[i + j] = '\0';
 
 	return (dest);
 }
