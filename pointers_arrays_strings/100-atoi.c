@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+* _atoi - converts a string to an interger
+*@s : parameter to hold value
+* Return: _atoi
+*/
+
+
 int _atoi(char *s)
 {
 	short boolean;
