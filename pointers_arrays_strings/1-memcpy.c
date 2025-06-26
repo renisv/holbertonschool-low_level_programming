@@ -7,18 +7,16 @@
  * @n: number of bytes to copy
  *
  * Description: Copies 'n' bytes from memory area 'src' to memory area 'dest'.
- *              Does not check for overlapping memory areas or null terminators.
- *
  * Return: pointer to the destination memory area 'dest'
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-    unsigned int i;
+unsigned int i;
 
-    for (i = 0; i < n; i++)
-    {
-        dest[i] = src[i];
-    }
+for (i = 0; i < n; i++)
+{
+dest[i] = src[i];
+}
 
-    return (dest);
+return (dest);
 }
