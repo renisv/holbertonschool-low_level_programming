@@ -8,7 +8,7 @@
  *
  * Return: 0 is successful, 1 iis error
  */
- 
+
 int main(int argc, char *argv[])
 {
 	int num1, num2, result;

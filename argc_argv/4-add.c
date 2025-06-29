@@ -8,7 +8,7 @@
  *
  * Return: 0 is successful
  */
- 
+
 int main(int argc, char *argv[])
 {
 	int i, j;
