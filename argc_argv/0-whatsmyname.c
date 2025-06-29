@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+ * main - Prints the name of the program
+ * @argc: Argument count
+ * @argv: Argument vector
+ *
+ * Return: 0
+ */
+
 int main(int argc, char *argv[])
 {
 		(void) argc;
