@@ -26,17 +26,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     for (i = 0; s1[i] != '\0'; i++)
         concat[i] = s1[i];
 
-    if (n == s2_len)
+    for(j = 0; j < s2_len; j++)
     {
-        for (j =0; j < n; j++)
-            concat[i+j] = s2[j];
-    }
-    else   
-    {
-        for (j =0; s2[j] != '\0'; j++)
-        {
-            concat[i+j] = s2[j];
-        }
+        concat[i + j] = s2[j];
     }
     concat[i+j] = '\0';
 
