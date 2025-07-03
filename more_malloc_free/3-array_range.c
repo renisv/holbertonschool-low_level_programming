@@ -8,7 +8,7 @@
  * @min: Minimum value (inclusive)
  * @max: Maximum value (inclusive)
  *
- * Return: Pointer to allocated array (success), NULL if min > max or malloc fails
+ * Return: Pointer to allocated array (success)
  */
 int *array_range(int min, int max)
 {
@@ -19,7 +19,7 @@ if (min > max)
 return (NULL);
 
 length = max - min + 1;
-numbers = malloc(length * sizeof(int));
+numbers = malloc(length *sizeof(int));
 
 if (numbers == NULL)
 return (NULL);
