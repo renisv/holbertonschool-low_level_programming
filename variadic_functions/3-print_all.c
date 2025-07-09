@@ -1,52 +1,64 @@
-#include <stdarg.h>
 #include <stdio.h>
-#include <string.h>
+#include <stdarg.h>
 #include "variadic_functions.h"
+
 /**
- *print_all - function that prints everything
- *@format: a list of types of arguments passed to the function
+ * print_arg - prints one argument based on type
+ * @type: the format specifier
+ * @args: va_list of arguments
+ * @sep: separator string
+ */
+void print_arg(char type, va_list args, char *sep)
+{
+char *str;
+
+switch (type)
+{
+case 'c':
+printf("%s%c", sep, va_arg(args, int));
+break;
+case 'i':
+printf("%s%d", sep, va_arg(args, int));
+break;
+case 'f':
+printf("%s%f", sep, va_arg(args, double));
+break;
+case 's':
+str = va_arg(args, char *);
+printf("%s%s", sep, str ? str : "(nil)");
+break;
+}
+}
+
+/**
+ * print_all - prints anything
+ * @format: list of types of arguments passed
  */
 void print_all(const char * const format, ...)
 {
-	va_list args;
-	int i = 0;
-	char *t;
-	char *separator = ", ";
-	int length = 0;
-	while (format[length] != '\0' || format != NULL)
-		length++;
+va_list args;
+unsigned int i = 0;
+char *sep = "";
 
+va_start(args, format);
 
-	if (length != 0)
-	{
-	va_start(args, format);
-	while (format[i] != '\0')
-	{
-		switch (format[i])
-		{
-			case 's':
-				t = va_arg(args, char *);
-				if (t != NULL)
-				{
-					printf("%s%s", t, i == length - 1 ? "" : separator);
-					break;
-				}
-					printf("(nil)%s", i == length - 1 ? "" : separator);
-					break;
-			case 'i':
-				printf("%d%s", va_arg(args, int), i == length - 1 ? "" : separator);
-				break;
-			case 'f':
-				printf("%f%s", va_arg(args, double), i == length - 1 ? "" : separator);
-				break;
-			case 'c':
-				printf("%c%s", va_arg(args, int), i == length - 1 ? "" : separator);
-				break;
-			default:
-				break;
-		}
-		i++;
-	}
-		}
-		printf("\n");
+if (!format)
+{
+printf("\n");
+va_end(args);
+return;
+}
+
+while (format[i])
+{
+if (format[i] == 'c' || format[i] == 'i' ||
+format[i] == 'f' || format[i] == 's')
+{
+print_arg(format[i], args, sep);
+sep = ", ";
+}
+i++;
+}
+printf("\n");
+va_end(args);
 }
