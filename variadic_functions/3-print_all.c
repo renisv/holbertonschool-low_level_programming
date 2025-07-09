@@ -12,7 +12,10 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	char *t;
 	char *separator = ", ";
-	int length = format == NULL ? 0 : strlen(format);
+	int length = 0;
+	while (format[length] != '\0')
+		length++;
+
 
 	if (length != 0)
 	{
