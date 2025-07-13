@@ -3,9 +3,9 @@
 #include "variadic_functions.h"
 
 /**
- * print_arg - prints one argument based on type
- * @type: the format specifier
- * @args: va_list of arguments
+ * print_arg - helper function to print one argument
+ * @type: format specifier
+ * @args: variable arguments list
  * @sep: separator string
  */
 void print_arg(char type, va_list args, char *sep)
@@ -31,8 +31,8 @@ break;
 }
 
 /**
- * print_all - prints anything
- * @format: list of types of arguments passed
+ * print_all - prints anything based on format
+ * @format: list of format specifiers
  */
 void print_all(const char * const format, ...)
 {
