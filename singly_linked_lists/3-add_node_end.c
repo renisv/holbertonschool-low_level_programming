@@ -18,18 +18,11 @@ unsigned int length(const char *str)
 }
 
 /**
- * add_node - Adds a new node at the beginning of a list_t list.
- * @head: A pointer to the head of the linked list.
- * @str: The string to be added to the new node.
+ * add_node_end - Adds a new node at the end of a list_t list.
+ * @head: Double pointer to the head of the list.
+ * @str: String to be duplicated and added to the new node.
  *
- * Return: The address of the new element, or NULL if it failed.
- *
- * Description:
- * - Allocates memory for a new node and a copy of the string.
- * - If str is NULL, returns NULL.
- * - If memory allocation fails at any point, frees any allocated memory
- *   and returns NULL.
- * - The new node becomes the head of the list.
+ * Return: Address of the new element, or NULL if it failed.
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -57,7 +50,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (*head == NULL)
 		*head = new_node;
 	else
-	{	
+	{
 		tmp = *head;
 		while (tmp->next != NULL)
 			tmp = tmp->next;
