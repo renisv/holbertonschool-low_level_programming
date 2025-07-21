@@ -2,6 +2,14 @@
 #include <string.h>
 #include <stdlib.h>
 
+unsigned int length(const char *str)
+{
+	unsigned int count = 0;
+	while (str[count] != '\0')
+		count++;
+	return (count);
+}
+
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
@@ -22,7 +30,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	
 	new_node->str = duplicate;
-	new_node->len = strlen(duplicate);
+	new_node->len = length(duplicate);
 
 	new_node->next = *head;
 	*head = new_node;
