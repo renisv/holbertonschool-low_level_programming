@@ -21,4 +21,4 @@ A doubly linked list is a dynamic, linear data structure consisting of nodes. Ea
 
 ## Conclusion
 
-Together, these tasks implement a robust doubly linked list module in C: printing, length calculation, adding and freeing nodes, summing contents, retrieving nodes by index, and inserting or deleting nodes at specific positions. This suite of functions offers flexible, bidirectional navigation and manipulation capabilities—forming a solid base for more complex list-based structures and algorithms.
+All these tasks work together to build a complete and useful doubly linked list in C. The program can print the list, count how many elements it has, add or remove items, find a specific item, and add or delete items at any position. Because the list can be moved through in both directions, it's easy to manage and update. This makes it a strong foundation for building more advanced programs that need to work with lists of data.
