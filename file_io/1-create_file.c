@@ -13,7 +13,7 @@
 int create_file(const char *filename, char *text_content)
 {
     int fd, bytes_written = 0;
-    mode_t permissions = S_IRUSR | S_IWUSR; /* rw------- */
+    mode_t permissions = 0600; /* rw------- */
 
     if (filename == NULL)
         return (-1);
