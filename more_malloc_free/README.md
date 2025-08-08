@@ -1,33 +1,15 @@
-# Memory Allocation in C
+# Advanced Memory Management in C
 
-This project explores different memory allocation techniques in C programming, focusing on automatic and dynamic allocation using `malloc` and `free`.
+This directory contains programs demonstrating more complex dynamic memory allocation techniques using malloc, free, and realloc.
 
-## Concepts Covered
+## Files Overview
 
-- **Automatic Allocation**: Memory managed by the compiler (stack memory)
-- **Dynamic Allocation**: Manual memory management using heap memory
-- `malloc()`: Function to allocate memory dynamically
-- `free()`: Function to release allocated memory
-- Memory leaks and how to prevent them
-- Proper memory management practices
+| File Name | Description |
+|-----------|-------------|
+| [0-malloc_checked.c](0-malloc_checked.c) | Allocates memory with exit on failure |
+| [1-string_nconcat.c](1-string_nconcat.c) | Concatenates n bytes of two strings |
+| [2-calloc.c](2-calloc.c) | Custom calloc implementation |
+| [3-array_range.c](3-array_range.c) | Creates array of integers within range |
 
-## Files
 
-1. `0-main.c` - Basic automatic allocation example
-2. `1-main.c` - Simple malloc usage
-3. `2-main.c` - Array allocation with malloc
-4. `3-main.c` - Memory leak example
-5. `4-main.c` - Proper memory management with malloc and free
-
-## Requirements
-
-- All files should be compiled on Ubuntu 20.04 LTS using `gcc`
-- Use the following flags: `-Wall -Wextra -Werror -pedantic -std=gnu89`
-- Each file should demonstrate a specific concept
-- Code should be Betty-style compliant
-
-## Compilation
-
-To compile any of the files:
-```bash
-gcc -Wall -Wextra -Werror -pedantic -std=gnu89 <filename> -o <outputname>
+These programs build on basic memory management with safer allocation and more complex use cases.
